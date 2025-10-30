@@ -65,3 +65,6 @@ https://restcountries.com/#endpoints-capital-city
 
 Search for corresponding endpoints, for example:
 - Capital city: https://restcountries.com/#endpoints-capital-city
+
+### Pipes Angular
+https://angular.dev/api/common/DecimalPipe
