@@ -58,3 +58,10 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ### Angular good practices
 https://angular.dev/style-guide#dont-prefix-output-properties
+
+### API consumed
+Page:
+https://restcountries.com/#endpoints-capital-city
+
+Search for corresponding endpoints, for example:
+- Capital city: https://restcountries.com/#endpoints-capital-city
