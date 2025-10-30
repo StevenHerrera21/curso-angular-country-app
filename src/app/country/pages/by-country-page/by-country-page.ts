@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CountrySearchInput } from '../../components/country-search-input/country-search-input';
 import { CountryList } from '../../components/country-list/country-list';
+import { Country } from '../../interfaces/country.interface';
 
 @Component({
   selector: 'app-by-country-page',
@@ -8,4 +9,6 @@ import { CountryList } from '../../components/country-list/country-list';
   templateUrl: './by-country-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ByCountryPage { }
+export class ByCountryPage {
+  countries = signal<Country[]>([]);
+ }

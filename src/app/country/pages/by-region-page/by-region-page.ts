@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CountryList } from '../../components/country-list/country-list';
+import { Country } from '../../interfaces/country.interface';
 
 @Component({
   selector: 'app-by-region-page',
@@ -7,4 +8,6 @@ import { CountryList } from '../../components/country-list/country-list';
   templateUrl: './by-region-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ByRegionPage { }
+export class ByRegionPage { 
+  countries = signal<Country[]>([]);
+}
